@@ -19,9 +19,21 @@ public class TestAccountParam {
     public static Object[][] getData() {
         return new Object[][] {
                 { "Marina Klimova", true},
-                { "MarinaKlimova", true},
+                { "Marina K", true},
+                { "Marina  Klimova", false},
+                { "MarinaKlimova", false},
+                { " Marina Klimova", false},
+                { "Marina Klimova ", false},
+                { " MarinaKlimova", false},
+                { "MarinaKlimova ", false},
+                { "Marina Klimova Mih", false},
+                { "MarinaKlimovaKlimova Klimova", false},
+                { "M K", true},
+                { "MK", false},
+                { "M ", false},
         };
     }
+
 
     @Test
     public void testName()  {
