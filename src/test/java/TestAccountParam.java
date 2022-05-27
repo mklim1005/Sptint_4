@@ -34,14 +34,10 @@ public class TestAccountParam {
         };
     }
 
-
     @Test
     public void testName()  {
         Account account = new Account(name);
         boolean result = account.checkNameToEmboss();
         assertEquals(expected, result);
     }
-
-
-
 }
