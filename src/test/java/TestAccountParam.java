@@ -31,6 +31,9 @@ public class TestAccountParam {
                 { "M K", true},
                 { "MK", false},
                 { "M ", false},
+                { null , false},
+                { " " , false},
+                { "" , false},
         };
     }
 
